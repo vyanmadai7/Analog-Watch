@@ -76,5 +76,5 @@ Preview<br>
 6<br>
 ## License
 
-This project uses the MIT License.
+This project uses the MIT License.<br>
 You may use it for personal or commercial purposes.
