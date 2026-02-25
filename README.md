@@ -21,59 +21,60 @@ Works on any browser without any external library
 Fully written in a single HTML file
 
 ## How It Works
-Tick Marks
+Tick Marks<br>
 
-JavaScript creates 60 ticks around the watch face:
+JavaScript creates 60 ticks around the watch face:<br>
 
-for (let i = 0; i < 60; i++) {
-    const tick = document.createElement('div');
-    tick.className = i % 5 === 0 ? 'tick' : 'tick small';
-    tick.style.transform = `rotate(${i * 6}deg)`;
-    container.appendChild(tick);
-}
-Clock Hands
+for (let i = 0; i < 60; i++) {<br>
+    const tick = document.createElement('div');<br>
+    tick.className = i % 5 === 0 ? 'tick' : 'tick small';<br>
+    tick.style.transform = `rotate(${i * 6}deg)`;<br>
+    container.appendChild(tick);<br>
+}<br>
 
-The time is converted into rotation angles:
+Clock Hands<br>
 
-const sDeg = (s / 60) * 360;
-const mDeg = ((m + s / 60) / 60) * 360;
-const hDeg = ((h % 12 + m / 60) / 12) * 360;
-Digital Clock
+The time is converted into rotation angles:<br>
 
-Shows the date, hour, minutes, and AM/PM.
+const sDeg = (s / 60) * 360;<br>
+const mDeg = ((m + s / 60) / 60) * 360;<br>
+const hDeg = ((h % 12 + m / 60) / 12) * 360;<br>
+Digital Clock<br>
 
-Project Structure
-project-folder/
-└── index.html
-└──style.css
-└──script.js
+Shows the date, hour, minutes, and AM/PM.<br>
 
-All code (HTML, CSS, and JavaScript) is inside one file.
+Project Structure<br>
+project-folder/<br>
+└──index.html<br>
+└──style.css<br>
+└──script.js<br>
 
-How to Use
+All code (HTML, CSS, and JavaScript) is inside one file.<br>
 
-Download or clone the project.
+## How to Use
 
-Open the file named index.html in any web browser.
+Download or clone the project.<br>
 
-The watch will start running automatically.
+Open the file named index.html in any web browser.<br>
+
+The watch will start running automatically.<br>
 
 ## Customization
 
-You can change the following parts easily:
+You can change the following parts easily:<br>
 
-Colors and background
+Colors and background<br>
 
-Animation speed
+Animation speed<br>
 
-Hand sizes and shapes
+Hand sizes and shapes<br>
 
-Digital clock style
+Digital clock style<br>
 
-Watch size and layout
+Watch size and layout<br>
 
-Preview
-6
+Preview<br>
+6<br>
 ## License
 
 This project uses the MIT License.
