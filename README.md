@@ -1,9 +1,9 @@
 ## Analog Digital Watch UI
 
 This project is a modern analog and digital watch built using only HTML, CSS, and JavaScript.<br>
-It includes smooth animation, a moving sunray effect, and a clear date and time display.
+It includes smooth animation, a moving sunray effect, and a clear date and time display.<br>
 
-## --6 Features--
+## 6 Features
 
 Animated hour, minute, and second hands
 
