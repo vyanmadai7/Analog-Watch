@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0a0a0a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.watch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.strap {
+    width: 140px;
+    height: 100px;
+    background: linear-gradient(90deg, #1a1a1a, #333, #1a1a1a);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.strap.top {
+    margin-bottom: -20px;
+}
+
+.strap.bottom {
+    margin-top: -20px;
+}
+
+.watch-case {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    background: linear-gradient(145deg, #bdc3c7, #2c3e50);
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9), inset 0 2px 5px rgba(255, 255, 255, 0.8);
+    z-index: 2;
+}
+
+.bezel {
+    width: 100%;
+    height: 100%;
+    background: #1e1e1e;
+    border-radius: 50%;
+    position: relative;
+    border: 4px solid #333;
+    overflow: hidden;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.dial {
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    position: relative;
+}
+
+.sunray {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.03), transparent 10%);
+    animation: rotateSunray 20s linear infinite;
+}
+
+@keyframes rotateSunray {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.digital-window {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    border: 1px solid #444;
+    padding: 5px 15px;
+    border-radius: 3px;
+    z-index: 1;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+#digitalClock {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.hand.hour {
+    height: 90px;
+    width: 10px;
+    background: linear-gradient(to right, #ddd, #fff, #ddd);
+    z-index: 5;
+}
+
+.hand.minute {
+    height: 130px;
+    width: 7px;
+    background: linear-gradient(to right, #bbb, #fff, #bbb);
+    z-index: 6;
+}
+
+.hand.second {
+    height: 150px;
+    width: 2px;
+    background: #e74c3c;
+    z-index: 10;
+}
+
+.center-stack {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: #222;
+    border-radius: 50%;
+    z-index: 12;
+}
+
+.pin {
+    width: 6px;
+    height: 6px;
+    background: #e74c3c;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.tick {
+    position: absolute;
+    width: 4px;
+    height: 18px;
+    background: #fff;
+    left: 50%;
+    margin-left: -2px;
+    transform-origin: 50% 165px;
+}
+
+.tick.small {
+    width: 1px;
+    height: 8px;
+    background: #555;
+    margin-left: -0.5px;
+}
+
+.crown {
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    width: 12px;
+    height: 35px;
+    background: linear-gradient(to bottom, #777, #eee, #777);
+    border-radius: 2px;
+    transform: translateY(-50%);
+}
