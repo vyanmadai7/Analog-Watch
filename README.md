@@ -5,7 +5,7 @@ It includes smooth animation, a moving sunray effect, and a clear date and time 
 
 ## 6 Features
 
-Animated hour, minute, and second hands
+Animated hour, minute, and second hands....
 
 Digital display showing month, day, time, and AM/PM
 
