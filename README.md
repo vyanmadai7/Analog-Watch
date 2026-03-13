@@ -5,19 +5,19 @@ It includes smooth animation, a moving sunray effect, and a clear date and time 
 
 ## 6 Features
 
-Animated hour, minute, and second hands...
+Animated hour, minute, and second hands..
 
-Digital display showing month, day, time, and AM/PM...
+Digital display showing month, day, time, and AM/PM..
 
-Rotating sunray effect on the dial...
+Rotating sunray effect on the dial..
 
-Sixty tick marks created automatically with JavaScript...
+Sixty tick marks created automatically with JavaScript..
 
-Watch body includes bezel, crown, straps, and center pin...
+Watch body includes bezel, crown, straps, and center pin..
 
-Works on any browser without any external library...
+Works on any browser without any external library..
 
-Fully written in a single HTML file...
+Fully written in a single HTML file..
 
 ## How It Works
 Tick Marks<br>
